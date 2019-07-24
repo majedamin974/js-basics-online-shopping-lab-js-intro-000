@@ -17,7 +17,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  if (cart.length === 0){ 
+  if (cart.length === 0){
     return "Your shopping cart is empty.";
   }
   else if (cart.length === 1){
@@ -39,14 +39,14 @@ function total() {
   return total;
 }
 
-function removeFromCart(item) { 
+function removeFromCart(item) {
   for (var i = 0; i < cart.length; i++){
     if (item === cart[i].itemName) {
       cart.splice(i, 1); //removes 1 item at index i
       return cart;
     }
   }
-  
+
   if (item != cart[item]) {
     return "That item is not in your cart.";
   }
@@ -59,6 +59,6 @@ function placeOrder(cardNumber) {
   }
   else {
     cart = [];
-    return string; 
+    return string;
   }
 }
